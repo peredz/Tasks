@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let paragraphs = ['C++', 'C#', 'JavaScript'];
+            let textBlock = document.getElementById('text');
+            let oldItems = textBlock.querySelectorAll('p');
+
+            for (let i = 0; i < paragraphs.length; i++) {
+                let newP = document.createElement('p');
+                
+                newP.innerText = paragraphs[i];
+
+                textBlock.insertBefore(newP, oldItems[i]);
+            }
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

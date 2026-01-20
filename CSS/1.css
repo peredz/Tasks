@@ -1,0 +1,26 @@
+.menu-item {
+  text-align: center;
+}
+
+#menu ul {
+  padding-left: 0;
+  margin: 0.5%;
+}
+
+#menu li {
+  display: inline-block;
+  width: 16%;
+  background: #FF0000;
+}
+
+#menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.picture {
+  width: 70%;
+  background: rgba(0, 255, 0, 0.5);
+  margin: 5px auto;
+  padding: 5px 0;
+}

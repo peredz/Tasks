@@ -1,0 +1,6 @@
+mixin createList(list_type, array, text_type)
+  #{list_type}
+    each item in array
+      li: #{text_type} #{item}
+
++createList('ul', ['Python', 'JavaScript', 'Java'], 'strong')

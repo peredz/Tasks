@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let text = "яблоко 15 груша 4 15 дом 100 4";
+
+            let words = text.split(" "); 
+
+            let numbers = [];
+
+            for (let i = 0; i < words.length; i++) {
+                let num = Number(words[i]);
+
+                if (!isNaN(num) && !numbers.includes(num)) {
+                    numbers.push(num);
+                }
+            }
+
+            numbers.sort((a, b) => a - b);
+
+            alert(numbers);
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

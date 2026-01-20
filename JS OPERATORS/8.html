@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let sum = (...args) => {
+                let sum1 = 0;
+                let i = 0;
+
+                while (i < args.length) { 
+                    if (args[i] % 2 != 0) {
+                        sum1 += args[i];
+                    }
+                    i++;
+                }
+                return sum1;
+            }
+
+            alert(sum(1, 2, 3, 4));
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

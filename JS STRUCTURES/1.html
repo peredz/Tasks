@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function sum(str) {
+                let sum = 0;
+                let currentNum = '';
+
+                for (let i = 0; i < str.length; i++) {
+                    const char = str[i];
+
+                    if (char >= '0' && char <= '9' && char !== ' ') {
+                    currentNum += char;
+                    } else if(currentNum.length > 0) {
+                        sum += Number(currentNum);
+                        currentNum = '';
+                    }
+                }
+
+                if (currentNum.length > 0) {
+                    sum += Number(currentNum);
+                }
+
+                return sum;
+            }
+
+            document.write(sum("Я 1 лвл 2 ыфдыфд  /ps 35"));
+            document.write(sum("Цена 50"));
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

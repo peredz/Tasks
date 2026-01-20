@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function sum () {
+                let sum = 0;
+                let i = 0;
+
+                while (i < arguments.length) {
+                    if (arguments[i] % 2 != 0) {
+                        sum += arguments[i];
+                    }
+                    i++;
+                }
+                return sum;
+            }
+
+            alert(sum(1, 2, 3, 4));
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

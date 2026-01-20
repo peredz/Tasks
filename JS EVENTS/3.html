@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <style>
+        .container {
+            border: 2px solid;
+            padding: 20px; 
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container" id="div">
+    <a href="#" id="link">Гиперссылка</a>
+</div>
+
+<script>
+    var link = document.getElementById('link');
+    var div = document.getElementById('div');
+    var basePadding = 20; 
+
+    link.onmouseover = function() {
+        var newPadding = basePadding * 1.1;
+        
+        div.style.paddingTop = newPadding + 'px';
+        div.style.paddingBottom = newPadding + 'px';
+    };
+
+    link.onmouseout = function() {
+        div.style.paddingTop = basePadding + 'px';
+        div.style.paddingBottom = basePadding + 'px';
+    };
+</script>
+</body>
+</html>

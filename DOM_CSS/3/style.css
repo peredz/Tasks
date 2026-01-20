@@ -1,0 +1,19 @@
+.main h2 {
+    color: green;
+}
+
+.main ol li:nth-child(2) {
+    color: green;
+}
+
+.main ol li:nth-child(2) a {
+    color: green;
+}
+
+.main p:last-child {
+    color: green;
+}
+
+.main p:last-child a {
+    color: green;
+}

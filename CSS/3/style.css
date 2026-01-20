@@ -1,0 +1,14 @@
+.blue-bold {
+    font-weight: bold;
+    color: blue;
+}
+
+.big-font {
+    font-size: 20px;
+    color: green;
+}
+
+.center-red {
+    color: red;
+    text-align: center;
+}

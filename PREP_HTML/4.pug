@@ -1,0 +1,10 @@
+- var products = { "ручка": 30.50, "карандаш": 50.00, "альбом": 156.00, "тетрадь": 21.50, "ластик": 10.20 };
+
+table
+  tr
+    th Товар
+    th Цена
+  each price, product in products
+    tr
+      td= product
+      td= price

@@ -1,0 +1,40 @@
+.pict {
+    display: flex;              
+    justify-content: space-between; 
+    align-items: center;        
+    padding: 20px 0;            
+}
+
+.pict a {
+    text-decoration: none;      
+}
+
+.pict img {
+    display: block;             
+    width: 150px;               
+    height: auto;               
+}
+
+/* 150px * 1.2 = 180px */
+.pict a.big img {
+    width: 180px;
+}
+
+@media (max-width: 1000px) {
+    .pict {
+        flex-wrap: wrap;        
+        justify-content: center; 
+        gap: 20px;              
+    }
+
+    .pict a.big img {
+        width: 150px;           
+    }
+}
+
+@media (max-width: 700px) {
+    .pict {
+        flex-direction: column;
+        align-items: center;
+    }
+}

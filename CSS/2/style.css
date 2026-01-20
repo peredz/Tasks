@@ -1,0 +1,11 @@
+h1 {
+    text-align: center;         /* вместо align="center" */
+    color: maroon;              /* вместо <font color="maroon"> */
+    text-decoration: underline; /* вместо <ins> */
+}
+
+h2 {
+    text-align: center;         /* вместо align="center" */
+    color: maroon;              /* вместо <font color="maroon"> */
+    font-style: italic;         /* вместо <i> */
+}

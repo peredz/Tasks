@@ -1,0 +1,11 @@
+.main li a[href="#"] {
+    color: green;
+}
+        
+body { 
+    font-family: sans-serif; 
+}
+        
+.menu { 
+    border-bottom: 1px solid #ccc; margin-bottom: 20px; 
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let lists = document.querySelectorAll('ol');
+
+            for (let list of lists) {
+                let items = list.children; 
+                
+                for (let i = 1; i < items.length; i += 2) {
+                    items[i].style.display = 'none';
+                }
+            }
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

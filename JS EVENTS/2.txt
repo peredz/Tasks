@@ -1,0 +1,4 @@
+onkeydown
+onkeypress
+oninput
+onkeyup

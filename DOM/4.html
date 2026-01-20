@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let images = document.querySelectorAll('img');
+
+            for (let img of images) {
+                if (img.width && img.height) {
+                    img.width = 0; 
+                    img.height = 0;
+                    img.className = 'pict';
+                }
+            }
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

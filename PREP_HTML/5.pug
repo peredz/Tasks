@@ -1,0 +1,8 @@
+- var n = 8;
+
+table
+  - for (var i = 0; i < n; i++)
+    tr
+      - for (var j = 0; j < n; j++)
+        - var cell = (i + j) % 2 === 0 ? 'white' : 'black'
+        td(class=cell)

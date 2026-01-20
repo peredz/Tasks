@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let htmlCode = `
+            <ul>
+            <li>элемент 1</li>
+            <li>элемент 2</li>
+            </ul>
+            <p>Первый абзац</p>
+            <br>
+            <p>Второй абзац</p>
+            <div>
+            <p>Третий абзац</p>
+            <p>Четвертый абзац</p>
+            </div>
+            `;
+
+            function getParagraphs(html) {
+                let position = 0;
+
+                while (true) {
+                    let startTagIndex = html.indexOf('<p>', position);
+
+                    if (startTagIndex === -1) break;
+
+                    let textStartIndex = startTagIndex + 3;
+
+                    let endTagIndex = html.indexOf('</p>', textStartIndex);
+
+                    if (endTagIndex === -1) break;
+
+                    let content = html.slice(textStartIndex, endTagIndex);
+                    document.write(content + "\n");
+
+                    position = endTagIndex + 4;
+                }
+            }
+
+            getParagraphs(htmlCode);
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
